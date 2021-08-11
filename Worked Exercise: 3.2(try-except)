@@ -1,1 +1,16 @@
+hrs = input("How many hours worked?")
+rate = input("What´s the hourly rate?") #10.50#
+try:
+    h = float(hrs)
+    r = float(rate)
+except:
+    print("Error, please enter a numeric input")
+    quit()
+
+print(h, r)
+if h > 40 :
+    y = (((h - 40) * 1.5)  + 40) * r
+else :
+    y = r * h
+print("Pay:",y)
 
